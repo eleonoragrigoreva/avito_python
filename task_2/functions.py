@@ -88,7 +88,7 @@ def save_report(report, path) -> None:
 Основная функция
 """
 def main():
-    file_path = input('Введите путь до файла') # путь считываем с клавиатуры
+    file_path = input('Введите путь до файла: ') # путь считываем с клавиатуры
     data = read_csv(file_path) 
 
     while True:
