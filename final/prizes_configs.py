@@ -1,5 +1,6 @@
 from json_dict_processing import process_list
 
+
 # Функция для извлечения года из строки
 def get_year(text):
     if text and len(text) >= 4:

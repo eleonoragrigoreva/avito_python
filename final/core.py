@@ -1,5 +1,6 @@
 from laureates_configs import process_persons, process_orgs
 
+
 # Определяем, человек или организация
 def process_laureate(data):
     if 'knownName' in data:

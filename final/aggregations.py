@@ -1,23 +1,24 @@
 import statistics
 
-# Функции для подсчета среднего, медианы, максимума и вывода топ-N
+
+# Функции для подсчета среднего, медианы, максимума и вывода топ значений
 def mean(values):
-    """Среднее значение"""
+    # минимальное
     return statistics.mean(values) if values else None
 
+
 def median(values):
-    """Медианное значение"""
+    # медиана
     return statistics.median(values) if values else None
 
+
 def maximum(values):
-    """Максимальное значение"""
+    # максимальное
     return max(values) if values else None
 
+
 def top_n(records, metric_field, n=5, reverse=True):
-    """
-    Берет топ-N записей по значению metric_field
-    reverse=True -> от большего к меньшему
-    """
+    # топ значений
     records_sorted = sorted(
         [r for r in records if r.get(metric_field) is not None],
         key=lambda x: x[metric_field],

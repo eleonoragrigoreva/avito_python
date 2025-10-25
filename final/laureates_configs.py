@@ -1,6 +1,7 @@
 from json_dict_processing import process_one_item
 from prizes_configs import process_prizes
 
+
 # Функция для извлечения года из даты
 def get_year_from_date(date_str):
     if date_str and len(date_str) >= 4:
@@ -18,6 +19,7 @@ CONFIG_PERSON = {
     'country_now': ['birth', 'place', 'countryNow', 'en'],
     'prizes': ['nobelPrizes']
 }
+
 
 # Конфиг для организации
 CONFIG_ORG = {
